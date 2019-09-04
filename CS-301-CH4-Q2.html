@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script>
+            function applyScripture() {
+                let name = document.getElementById("nameInputBox").value;
+                let scripture = " This is what the LORD says " + name + ", your Redeemer, who formed you in the womb: I am the LORD, who has made all things, who alone stretched out the heavens, who spread out the earth by myself ... (Isaiah 44:24, )";
+                document.getElementById('outputDiv').innerHTML = scripture
+            } 
+        </script>
+    </head>
+
+    <body>
+        Please enter your name: <input type="text" id="nameInputBox">
+        <button type="button" value="display" onclick="applyScripture()">
+            <div id="outputDiv"></div>
+    </body>
+
+</html>

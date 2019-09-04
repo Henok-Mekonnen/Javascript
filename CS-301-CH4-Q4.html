@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Address Filed </title>
+        <script>
+            function returnFullAdress() {
+                let street = document.getElementById("streetA").value;
+                let city = document.getElementById("cityA").value;
+                let state = document.getElementById("stateA").value;
+                let zipcod = document.getElementById("zipodeA").value;
+                let country = document.getElementById("countryA").value;
+                let validation = document.getElementById("validationA")
+                document.getElementById("output").innerHTML = "your order will be deliverd to: " + street + " " + city
+                 + ", " +state + " " + zipcod + " " + country;
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <h1>Address</h1>
+        <div id="output" >
+        Street Address: <input type="text" id="streetA"><br>
+        City: <input type="text" id="cityA"><br>
+        State: <input type="text" id="stateA"><br>
+        Zipcod: <input type="text" id="zipodeA"><br>
+        Country: <input type="text" id="countryA"><br>
+        Write your order hear <br><textarea rows="10" cols="30"> </textarea><br>
+        <input type="button" value="Show Full Address" onclick="returnFullAdress()">
+        
+        </div>
+        
+
+</body>
+
+</html>
